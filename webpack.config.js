@@ -40,13 +40,13 @@ module.exports={
             },
             // 打包URl文件
             {
-                test:/\.(png|jpeg|jpg|svg|gif|mp3)$/,
+                test:/\.(png|jpeg|jpg|svg|gif|mp3|ttf)$/,
                 use:[{loader:'url-loader', options: {limit: 8192}}]
             },
             // 打包babel文件
             {
                 test:/\.js$/,
-                exclude:path.resolve(__dirname,'./node_modules'),
+                exclude:path.resolve(__dirname,'../node_modules'),
                 use:{loader:'babel-loader'}
             },
             // 打包vue文件

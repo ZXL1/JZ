@@ -1,17 +1,14 @@
 <template>
-<main>
-<p>{{ msg }}</p>
-</main>
-</template>  
+    <main>
+
+    <app-header></app-header>
+    <app-footer></app-footer>
+    
+    </main>
+</template>
 <script>
-export default{
-        data(){
-            return {
-                msg:"德国柔荑花"
-            }
-        }
-    }
-</script> 
+    
+</script>
 <style>
     
 </style>
